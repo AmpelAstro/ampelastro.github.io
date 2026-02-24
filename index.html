@@ -50,8 +50,7 @@
 
 				<!-- Logo -->
 				<a  href="https://github.com/AmpelProject" >
-					<img src="https://user-images.githubusercontent.com/17532220/213287939-c3f2db40-
-									9c43-4d4c-8d55-68531cddcad7.png" width="200" height="200" alt="" align="left" />
+					<img src="https://user-images.githubusercontent.com/17532220/213287939-c3f2db40-9c43-4d4c-8d55-68531cddcad7.png" width="200" height="200" alt="" align="left" />
 				</a>
 				<a href="https://www.desy.de/">
 					<img src="images/desy.png" width="100" height="100" alt="" align="right" /> 
@@ -126,81 +125,102 @@
 
 					<p style="color: black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif "
 						align="justify">
-						The core of AMPEL is a general platform for the analysis of stream-based
-						data, with a focus on scalability, reproducibility and provenance. AMPEL was originally
-						developed to solve challenges in the context of high throughput astronomical observatories.
-						Modules specific for this purpose can now be found within the AmpelAstro project. A live
-						instance hosted at DESY Zeuthen provides a public broker service where the astronomical
-						community can access data from e.g. the Zwicky Transient Facility (currently), the Vera Rubin
-						Observatory and Ultrasat (upcoming).
+						The core of AMPEL is a general platform for the analysis of stream-based data, with a focus on scalability, reproducibility and end-to-end provenance.
+						AMPEL was originally developed to solve challenges in the context of high-throughput astronomical observatories, and astronomy-specific modules are maintained within the AmpelAstro project.
+						A live instance hosted at DESY Zeuthen provides a public broker service for time-domain astronomy, with streams from the Zwicky Transient Facility (currently) and the Vera C. Rubin Observatory LSST (upcoming).
 					</p>
-					<p style="color: black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
-						align="justify">
-						The AMPEL codebase is publicly available and can be accessed through the links below, which
-						includes instructions for how to setup a local AMPEL environment and immediately process
-						time-domain astronomical data.
 
+					<p style="color: black; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
+						align="justify">
+						For Rubin/LSST, alert processing is organized into science channels that produce curated streams of transient reports for rapid discovery and follow-up.
+						Users can explore these LSST channel streams and access the underlying Kafka topics (e.g. via Hopskotch) using Ampel-Access, which supports subscribing, caching, filtering, and interactive visualization of report sets.
+						The links below provide an overview of LSST streams and a general entry point for working with AMPEL.
 					</p>
 				</header>
 				<section class="tiles">
+
+					<article class="style3">
+						<span class="image">
+							<img src="images/pic07.jpg" width="300" height="400" alt="" />
+						</span>
+						<a href="LSST.html">
+							<h2>Rubin/LSST Science Streams</h2>
+							<div class="content">
+								<p><br>Curated AMPEL alert streams and science channels.</p>
+							</div>
+						</a>
+					</article>
+
+					<article class="style4">
+						<span class="image">
+							<img src="images/pic08.jpg" width="300" height="400" alt="" />
+						</span>
+						<a href="ampelaccess.html">
+							<h2>Ampel-Access Tools</h2>
+							<div class="content">
+								<p><br>Subscribe, filter and visualize AMPEL transient reports.</p>
+							</div>
+						</a>
+					</article>
+
 					<article class="style1">
 						<span class="image">
 							<img src="images/pic01.jpg " width="300" height="400" alt="" />
 						</span>
-						<a href="framework.html" target="_blank">
+						<a href="framework.html">
 							<h2>The AMPEL framework</h2>
 							<div class="content">
 								<p><br>Reproducible analysis of data streams </p>
 							</div>
 						</a>
 					</article>
-					<article class="style6">
+
+					<article class="style2">
 						<span class="image">
 							<img src="images/pic06.jpg" width="300" height="400" alt="" />
 						</span>
-						<a href="installation.html" target="_blank">
+						<a href="installation.html">
 							<h2>Getting started with ampel</h2>
 							<div class="content">
-								<p><br>Installation guide</p>
+								<p><br>Installation guide of the AMPEL framework</p>
 							</div>
 						</a>
 					</article>
-				</article>
-				
-					<article class="style2">
+					
+					<article class="style5">
 						<span class="image">
 							<img src="images/pic03.jpg" width="300" height="400" alt="" />
 						</span>
-						<a href="archive.html" target="_blank">
+						<a href="archive.html">
 							<h2>Astronomical Archives</h2>
 							<div class="content">
 								<p><br>Accessing alerts and catalogs.</p>
 							</div>
 						</a>
 					</article>
-					<article class="style3">
+					<article class="style6">
 						<span class="image">
 							<img src="images/pic02.jpg" width="300" height="400" alt="" />
 						</span>
-						<a href="transient.html" target="_blank">
+						<a href="transient.html">
 							<h2><br>Young Transients</h2>
 							<div class="content">
 								<p><br>Recent extragalactic events</p>
 							</div>
 						</a>
 					</article>
-					<article class="style4">
+					<article class="style7">
 						<span class="image">
 							<img src="images/jig.jpg" width="300" height="400" alt="" />
 						</span>
-						<a href="build.html" target="_blank">
+						<a href="build.html">
 							<h2>Broker</h2>
 							<div class="content">
 								<p><br> Build your own stream.</p>
 							</div>
 						</a>
 					</article>
-					<article class="style5">
+					<article class="style8">
 						<span class="image">
 							<img src="images/connection.jpg" width="300" height="400" alt="" />
 						</span>
@@ -212,29 +232,8 @@
 							</div>
 						</a>
 					</article>
-					<!-- <article class="style6">
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Veroeros</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic07.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ipsum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
+
+								<!-- <article class="style3">
 									<span class="image">
 										<img src="images/pic08.jpg" alt="" />
 									</span>
@@ -325,10 +324,24 @@
 								class="icon solid style1 fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</section>
+				
 				<ul class="copyright">
 					<li>&copy; The AMPEL Project. All rights reserved</li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
+				<p style="font-size: 0.75em; line-height: 1.4; margin-top: 1em; color: #777;">
+					<strong>Image Credits:</strong><br>
+
+					<em>Rubin Observatory images</em> – 
+					“Rubin Observatory and Its Target” (2022), Rubin Observatory/NSF/AURA/B. Quint; 
+					“Virgo Cluster Excerpt: NGC 4411 and RSCG 55” (2025), RubinObs/NOIRLab/SLAC/NSF/DOE/AURA. 
+					Licensed under 
+					<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>. 
+					Sources via NOIRLab/Wikimedia Commons.<br>
+
+					<em>All other tile images</em> – sourced from 
+					<a href="https://unsplash.com" target="_blank">Unsplash</a>.
+				</p>
 			</div>
 		</footer>
 		<!-- <footer id="footer">

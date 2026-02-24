@@ -83,7 +83,9 @@
 					</code><br>
 					<code>cd Ampel-HU-astro/
 					</code><br>
-					<code>poetry install -E "ztf sncosmo extcats notebook"
+					<code>poetry install --extras "ztf sncosmo lsst elasticc slack snpy lasair extcats"
+					</code><br>
+					<code>poetry run python -m pip install -U py-avro-schema hop-client
 					</code><br>
 					<code>poetry run ampel config build -out ampel_conf.yaml >& ampel_conf.log
 					</code><br>

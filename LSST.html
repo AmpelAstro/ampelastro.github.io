@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Rubin/LSST AMPEL streams</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<a href="https://github.com/AmpelProject">
+					<img src="https://user-images.githubusercontent.com/17532220/213287939-c3f2db40-9c43-4d4c-8d55-68531cddcad7.png"
+						width="200" height="200" alt="" style="float: left;" />
+				</a>
+
+				<h1 style="; color: (56, 49, 49);">
+					<br> Rubin/LSST AMPEL streams
+					<a href="mailto:jnordin@physik.hu-berlin.de?subject=from AMPEL project website" target="_blank"
+						class="icon solid fa-envelope" style="font-size: 0.8em;float: right;">&nbsp;<span class="label"></span></a>
+					<a href="https://github.com/AmpelProject" target="_blank" class="icon brands fa-github"
+						style="font-size: 0.8em;float: right;">&emsp;<span class="label"></span></a>
+				</h1>
+
+				<span class="image main">
+					<img src="images/snia_single.png" alt="" />
+				</span>
+
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					An AMPEL instance hosted at the <strong>DESY Zeuthen computing center</strong> will serve as one of the global distribution nodes for alerts from the Vera C. Rubin Observatory (LSST).
+					Alert processing is organized into <strong>science channels</strong>, each optimized for a specific scientific goal and developed in close collaboration with dedicated science teams.
+				</p>
+
+				<hr>
+
+				<h2>Accessing data</h2>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					LSST alert products associated with AMPEL science channels are primarily distributed via <strong>public Kafka streams</strong>, for example through the <strong>Hopskotch service</strong>.
+					The <strong>Ampel-Access package</strong> provides tools for subscribing to and parsing these streams, supporting workflows from interactive exploration to Multi-messenger candidate search.
+				</p>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Hopskotch: <a href="https://www.scimma.org/hopskotch" target="_blank">https://www.scimma.org/hopskotch</a><br>
+					Ampel-Access: <a href="ampelaccess.html" target="_blank">local overview page</a>
+				</p>
+
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Alternative access methods include distribution of time-critical events via <strong>Slack channels</strong> and reprocessing of alerts using the <strong>LSST archive</strong>.
+					Please contact the AMPEL team to gain access to these services.
+				</p>
+
+				<hr>
+
+				<h2>VRO/LSST science programs</h2>
+
+				<h3>Extragalactic transients</h3>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					This channel targets <strong>extragalactic transient events </strong>suitable for studies of rare and extreme objects, the early universe, and cosmology.
+					Objects in this channel are highly likely to be extragalactic and have sufficient photometric coverage to enable reliable classification.
+				</p>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Topic name on Hopskotch: <strong>ampel.lsst.extragalactic-transients</strong>
+				</p>
+
+				<h3>Infant explosive events</h3>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					The depth of LSST enables detection of <strong>very young transients</strong>, providing unique constraints on early-time physics.
+					This channel has very low alert volume, selects objects that are young and associated with nearby galaxies, and is optimized for rapid follow-up observations.
+				</p>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Topic name on Hopskotch: <strong>ampel.lsst.extragalactic-infants</strong> 
+				</p>
+
+				<h3>Multi-messenger optical counterparts</h3>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					LSST’s deep, multi-band observations enable detailed <strong>comparison with non-electromagnetic messengers</strong> such as gravitational waves and neutrinos.
+					This channel provides a curated stream of transients spatially and temporally associated with multi-messenger localization maps.
+				</p>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Released soon on Hopskotch.
+				</p>
+
+				<hr>
+
+				<h2>Adding further science programs</h2>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					AMPEL is designed to be extensible. New science channels can be added and existing ones refined as LSST data characteristics become better understood.
+					Typically: user groups develop and tune pipelines locally using archival data, pipelines are validated and reviewed, and approved pipelines are deployed into live processing by AMPEL operators. The output from such user defined science channels can be either private or public (although we encourge the latter).
+				</p>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Example notebooks and jobs:
+					<a href="https://github.com/AmpelAstro/Ampel-HU-astro/examples" target="_blank">https://github.com/AmpelAstro/Ampel-HU-astro/examples</a><br>
+					Contact for more info: <a href="mailto:ampel-info@desy.de">ampel-info@desy.de</a>
+				</p>
+
+				<hr>
+
+				<h2>Core pipeline components</h2>
+
+				<h3>Filtering</h3>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Each channel configures filtering designed to limit throughput into what can be managed by science users working locally.
+					Typical filtering rejects old transients with long-term prior variability not matching the target source class and removes stellar targets identified e.g. through motion or PSF shape.
+				</p>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Example unit implementation:
+					<a href="https://github.com/AmpelAstro/Ampel-HU-astro/blob/main/ampel/contrib/hu/t0/DecentVroFilter.py" target="_blank">
+						DecentVroFilter.py
+					</a>
+				</p>
+
+				<h3>Catalog matching</h3>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					AMPEL performs catalog cross-matching using the <strong>DESY AMPEL</strong> catalog service and external resources (e.g. <strong>NOIRLab</strong> catalogs).
+					Matched information is combined using <strong>Digest Redshift</strong> to produce an AMPEL redshift estimate. "Ampel Z" where available produces a weighted average of all available nearby galaxy redshifts, where the weighting is set by the redshift accuracy.
+				</p>
+
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					API documentation:
+					<a href="https://ampel.zeuthen.desy.de/api/catalogmatch/docs#/catalogs/list_catalogs_catalogs__get" target="_blank">
+						DESY catalog service
+					</a>
+				</p>
+
+				<h3>Photometric classification</h3>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Photometric classification in AMPEL uses mature, state-of-the-art methods combining encoder–decoder neural networks and gradient-boosted decision trees (e.g. <strong>LightGBM</strong>, <strong>XGBoost</strong>).
+					These architectures were validated both on real data (ZTF, noisztf) and were top-performing in siumulation challenges such as <strong>ELAsTiCC</strong> and <strong>Mallorn</strong>.
+				</p>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Both binary and fine-grained multi-class classifiers are supported. Classification results are fully provenance-tracked: each state explicitly references the exact set of observations used. The performance of every classifier critically depends on the versioning and training, and every classifiction is thus categorized by the tuple of state (input data), classifier name (algorithm identifier), model name (training sample and output selection) and version. For each of these, a number of probabilities is provided (e.g. ‘P(SNIa)=0.3’).
+				</p>
+				<p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #000;"
+					align="justify">
+					Further details:
+					<a href="https://arxiv.org/abs/2501.16511" target="_blank">arXiv:2501.16511</a>
+				</p>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
